@@ -10,10 +10,7 @@
         private int _heightInInches;
         private int _weightInPounds;
 
-        //We don't need the following
-        //private Position _position;
-        //private Shot _shot;
-
+ 
         //properties
         public string BirthPlace
         {
@@ -33,6 +30,41 @@
             }
 
         }
+        public string FirstName
+        {
+            get
+
+            {
+                return _firstName;
+            }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("First name cannot be null or empty.");
+                }
+                //if we get here, then no exception happened
+                _firstName = value;
+            }
+
+        }
+        public string LastName
+        {
+            get
+
+            {
+                return _lastName;
+            }
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentException("Last name cannot be null or empty.");
+                }
+                //if we get here, then no exception happened
+                _lastName = value;
+            }
+        }
         public int HeightInInches
         {
             get
@@ -48,6 +80,22 @@
                 _heightInInches = value;
             }
         }
+
+        public int WeightInPounds
+        {
+            get
+            {
+                return _weightInPounds;
+            }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Weight must be positive.");
+                }
+                _weightInPounds = value;
+            }
+        }
         public DateOnly DateOfBirth
         {
             get
@@ -57,6 +105,10 @@
 
             set
             { 
+                if (value > DateOnly.FromDateTime(DateTime.Now))
+                {
+                    throw new ArgumentException("Date of birth cannot be in the future.");
+                }
                 _dateOfBirth = value;
             }
         }
@@ -98,10 +150,14 @@
         public HockeyPlayer(string firstName, string lastName, string birthPlace, DateOnly dateOfBirth, int weightInPounds, int heightInInches, Position position = Position.Center, Shot shot = Shot.Left)
         {
          BirthPlace = birthPlace;
+            FirstName = firstName;
+            LastName = lastName;
             HeightInInches = heightInInches;
+            WeightInPounds= weightInPounds;
+            DateOfBirth = dateOfBirth;
             Position = position;
             Shot = shot;
-            //TODO: assign the remaining properties once you've completed them
+           
         }
     }
 }

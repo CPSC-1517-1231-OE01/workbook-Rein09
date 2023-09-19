@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HockeyData", "HockeyData\HockeyData.csproj", "{33BB1F46-E5FC-4449-9529-2557E286543E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utilities", "Utilities\Utilities.csproj", "{594332BF-3028-4442-A061-83D288B19366}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{594332BF-3028-4442-A061-83D288B19366}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HockeyConsoleApp", "HockeyConsoleApp\HockeyConsoleApp.csproj", "{15360F19-2242-4B04-97FC-876A062AABEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{594332BF-3028-4442-A061-83D288B19366}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{594332BF-3028-4442-A061-83D288B19366}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{594332BF-3028-4442-A061-83D288B19366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15360F19-2242-4B04-97FC-876A062AABEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15360F19-2242-4B04-97FC-876A062AABEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15360F19-2242-4B04-97FC-876A062AABEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15360F19-2242-4B04-97FC-876A062AABEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

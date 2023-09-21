@@ -28,6 +28,10 @@
 
         public static bool IsPositive(int value) => value > 0; // ? true : false;
 
+        public static bool IsPositive(double value) => value > 0.0; // ? true : false;
+
+        public static bool IsPositive(decimal value) => value > 0M; // ? true : false;
+
         /// <summary>
         /// Determines if a DateOnly is in the future, tomorrow or greater
         /// </summary>

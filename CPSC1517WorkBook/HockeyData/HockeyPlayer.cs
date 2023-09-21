@@ -20,7 +20,7 @@ namespace Hockey.Data
             {
                 return _birthPlace;
             }
-            set
+            private set
             {
                 if (Utilities.IsNullEmptyOrWhiteSpace(value))
                 {
@@ -38,7 +38,7 @@ namespace Hockey.Data
             {
                 return _firstName;
             }
-            set
+            private set
             {
                 if (Utilities.IsNullEmptyOrWhiteSpace(value))
                 {
@@ -56,7 +56,7 @@ namespace Hockey.Data
             {
                 return _lastName;
             }
-            set
+            private set
             {
                 if (Utilities.IsNullEmptyOrWhiteSpace(value))
                 {
@@ -72,7 +72,7 @@ namespace Hockey.Data
             {
                 return _heightInInches;
             }
-            set
+            private set
             {
                 if (Utilities.IsZeroOrNegative(value))
                 {
@@ -88,7 +88,7 @@ namespace Hockey.Data
             {
                 return _weightInPounds;
             }
-            set
+            private set
             {
                 if (!Utilities.IsPositive(value)) //== false
                 {
@@ -104,7 +104,7 @@ namespace Hockey.Data
                 return _dateOfBirth;
             }
 
-            set
+            private set
             { 
                 if (Utilities.IsInTheFuture(value))
                 {
@@ -125,17 +125,17 @@ namespace Hockey.Data
         /// Creates a default instance of a HockeyPlayer
         /// </summary>
 
-        public HockeyPlayer()
-        { 
-            _firstName = string.Empty;
-            _lastName = string.Empty;
-            _birthPlace = string.Empty;
-            _dateOfBirth = new DateOnly();
-            _weightInPounds = 0;
-            _heightInInches= 0;
-            Shot = Shot.Left;
-            Position = Position.Center;
-        }
+       // public HockeyPlayer()
+        // { 
+         //   _firstName = string.Empty;
+         //   _lastName = string.Empty;
+          //  _birthPlace = string.Empty;
+          //  _dateOfBirth = new DateOnly();
+          //  _weightInPounds = 0;
+          //  _heightInInches= 0;
+          //  Shot = Shot.Left;
+         //   Position = Position.Center;
+        //}
 
         /// <summary>
         /// 
@@ -159,6 +159,11 @@ namespace Hockey.Data
             Position = position;
             Shot = shot;
            
+        }
+        //Override of ToString
+        public override string ToString()
+        {
+            return $"{FirstName}, {LastName}";
         }
     }
 }

@@ -22,7 +22,7 @@ namespace Hockey.Data
             }
             set
             {
-                if (string.IsNullOrWhiteSpace(value))
+                if (Utilities.IsNullEmptyOrWhiteSpace(value))
                 {
                     throw new ArgumentException("Birth place cannot be null or empty.");
                 }
@@ -40,7 +40,7 @@ namespace Hockey.Data
             }
             set
             {
-                if (string.IsNullOrWhiteSpace(value))
+                if (Utilities.IsNullEmptyOrWhiteSpace(value))
                 {
                     throw new ArgumentException("First name cannot be null or empty.");
                 }
@@ -58,7 +58,7 @@ namespace Hockey.Data
             }
             set
             {
-                if (string.IsNullOrWhiteSpace(value))
+                if (Utilities.IsNullEmptyOrWhiteSpace(value))
                 {
                     throw new ArgumentException("Last name cannot be null or empty.");
                 }

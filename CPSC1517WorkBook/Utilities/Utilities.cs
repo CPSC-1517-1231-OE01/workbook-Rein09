@@ -2,6 +2,7 @@
 {
     public static class Utilities
     {
+        public static bool IsNullEmptyOrWhiteSpace(string value) => string.IsNullOrWhiteSpace(value);
         public static bool IsZeroOrNegative (int value)
         {
             // Simple technique -> return expression

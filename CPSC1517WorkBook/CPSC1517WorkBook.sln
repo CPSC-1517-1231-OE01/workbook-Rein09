@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HockeyTestProject", "Hockey
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UtilitiesTestProject", "UtilitiesTestProject\UtilitiesTestProject.csproj", "{5CE8EA89-4C56-40A8-B11E-12EF55007700}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSampleApp", "BlazorSampleApp\BlazorSampleApp.csproj", "{BD776BFD-0AD6-44DD-B8BF-9CEAE817F491}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSampleApp", "BlazorSampleApp\BlazorSampleApp.csproj", "{BD776BFD-0AD6-44DD-B8BF-9CEAE817F491}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
